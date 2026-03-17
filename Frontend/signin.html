@@ -1,0 +1,127 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coursesonline</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+<div class="container">
+  <div class="header">
+    <img src="https://cdn-icons-png.flaticon.com/512/2436/2436874.png" alt="การเรียน">
+    Courses Online
+  </div>
+
+  <!-- คำนำหน้า -->
+  <div class="form-input">
+    <div class="header-form">คำนำหน้า <span class="required">*</span></div>
+    <select name="title">
+      <option value="">-- เลือกคำนำหน้า --</option>
+      <option value="นาย">นาย</option>
+      <option value="นาง">นาง</option>
+      <option value="นางสาว">นางสาว</option>
+      <option value="เด็กชาย">เด็กชาย</option>
+      <option value="เด็กหญิง">เด็กหญิง</option>
+      <option value="ไม่ระบุ">ไม่ระบุ</option>
+    </select>
+  </div>
+
+  <!-- ชื่อ-นามสกุล -->
+  <div class="flex">
+    <div class="form-input">
+      <div class="header-form">ชื่อ <span class="required">*</span></div>
+      <input name="first_name" type="text" placeholder="ชื่อจริง">
+    </div>
+    <div class="form-input">
+      <div class="header-form">นามสกุล <span class="required">*</span></div>
+      <input name="last_name" type="text" placeholder="นามสกุล">
+    </div>
+  </div>
+
+  <!-- วันเกิด -->
+  <div class="form-input">
+    <div class="header-form">วันเกิด</div>
+    <input name="date_of_birth" type="date">
+  </div>
+
+  <!-- อีเมล -->
+  <div class="form-input">
+    <div class="header-form">อีเมล <span class="required">*</span></div>
+    <input name="email" type="email" placeholder="example@email.com">
+  </div>
+
+  <!-- รหัสผ่าน -->
+  <div class="form-input">
+    <div class="header-form">รหัสผ่าน <span class="required">*</span></div>
+    <input name="password" type="password" placeholder="อย่างน้อย 8 ตัวอักษร">
+  </div>
+
+  <!-- บทบาท + ระดับการศึกษา -->
+  <div class="flex">
+    <div class="form-input">
+      <div class="header-form">บทบาท <span class="required">*</span></div>
+      <select name="role">
+        <option value="">-- เลือก --</option>
+        <option value="student">นักเรียน</option>
+        <option value="intructor">ผู้สอน</option>
+      </select>
+    </div>
+    <div class="form-input">
+      <div class="header-form">ระดับการศึกษา</div>
+      <select name="education_level">
+        <option value="">-- เลือก --</option>
+        <option value="ประถมศึกษา">ประถมศึกษา</option>
+        <option value="มัธยมศึกษา">มัธยมศึกษา</option>
+        <option value="ปวช.">ปวช.</option>
+        <option value="ปวส.">ปวส.</option>
+        <option value="ปริญญาตรี">ปริญญาตรี</option>
+        <option value="ปริญญาโท">ปริญญาโท</option>
+        <option value="ปริญญาเอก">ปริญญาเอก</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- จังหวัด -->
+  <div class="form-input">
+    <div class="header-form">จังหวัด</div>
+    <select name="province">
+      <option value="">-- เลือกจังหวัด --</option>
+      <option>กรุงเทพมหานคร</option><option>กระบี่</option><option>กาญจนบุรี</option>
+      <option>กาฬสินธุ์</option><option>กำแพงเพชร</option><option>ขอนแก่น</option>
+      <option>จันทบุรี</option><option>ฉะเชิงเทรา</option><option>ชลบุรี</option>
+      <option>ชัยนาท</option><option>ชัยภูมิ</option><option>ชุมพร</option>
+      <option>เชียงราย</option><option>เชียงใหม่</option><option>ตรัง</option>
+      <option>ตราด</option><option>ตาก</option><option>นครนายก</option>
+      <option>นครปฐม</option><option>นครพนม</option><option>นครราชสีมา</option>
+      <option>นครศรีธรรมราช</option><option>นครสวรรค์</option><option>นนทบุรี</option>
+      <option>นราธิวาส</option><option>น่าน</option><option>บึงกาฬ</option>
+      <option>บุรีรัมย์</option><option>ปทุมธานี</option><option>ประจวบคีรีขันธ์</option>
+      <option>ปราจีนบุรี</option><option>ปัตตานี</option><option>พระนครศรีอยุธยา</option>
+      <option>พะเยา</option><option>พังงา</option><option>พัทลุง</option>
+      <option>พิจิตร</option><option>พิษณุโลก</option><option>เพชรบุรี</option>
+      <option>เพชรบูรณ์</option><option>แพร่</option><option>ภูเก็ต</option>
+      <option>มหาสารคาม</option><option>มุกดาหาร</option><option>แม่ฮ่องสอน</option>
+      <option>ยโสธร</option><option>ยะลา</option><option>ร้อยเอ็ด</option>
+      <option>ระนอง</option><option>ระยอง</option><option>ราชบุรี</option>
+      <option>ลพบุรี</option><option>ลำปาง</option><option>ลำพูน</option>
+      <option>เลย</option><option>ศรีสะเกษ</option><option>สกลนคร</option>
+      <option>สงขลา</option><option>สตูล</option><option>สมุทรปราการ</option>
+      <option>สมุทรสงคราม</option><option>สมุทรสาคร</option><option>สระแก้ว</option>
+      <option>สระบุรี</option><option>สิงห์บุรี</option><option>สุโขทัย</option>
+      <option>สุพรรณบุรี</option><option>สุราษฎร์ธานี</option><option>สุรินทร์</option>
+      <option>หนองคาย</option><option>หนองบัวลำภู</option><option>อ่างทอง</option>
+      <option>อำนาจเจริญ</option><option>อุดรธานี</option><option>อุตรดิตถ์</option>
+      <option>อุทัยธานี</option><option>อุบลราชธานี</option>
+    </select>
+  </div>
+
+  <div id="message" class="message"></div>
+  <button onclick="submitData()" class="button">สมัครสมาชิก</button>
+  <div class="login-link">มีบัญชีแล้ว? <a href="login.html">เข้าสู่ระบบ</a></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

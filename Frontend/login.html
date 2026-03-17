@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coursesonline</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <img src="https://cdn-icons-png.flaticon.com/512/2436/2436874.png" alt="การเรียน">
+    Courses Online
+  </div>
+
+   <!-- อีเมล -->
+  <div class="form-input">
+    <div class="header-form">อีเมล <span class="required">*</span></div>
+    <input name="email" type="email" placeholder="example@email.com">
+  </div>
+
+  <!-- รหัสผ่าน -->
+  <div class="form-input">
+    <div class="header-form">รหัสผ่าน <span class="required">*</span></div>
+    <input name="password" type="password" placeholder="อย่างน้อย 8 ตัวอักษร">
+  </div>
+
+  <div id="message" class="message"></div>
+  <button onclick="submitData()" class="button">เข้าสู่ระบบ(Login)</button>
+  <div class="login-link"> <a href="login.html">ลืมรหัสผ่าน?</a></div>
