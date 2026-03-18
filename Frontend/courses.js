@@ -4,7 +4,7 @@ const response = await axios.get(`${BASE_URL}/users/${id}`)
 const user = response.data
 
 
-// โหลดข้อมูล
+// โหลดข้อมูลล
 function loadCourses() {
     fetch(API_URL)
     .then(res => res.json())
